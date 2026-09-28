@@ -112,6 +112,10 @@ p.lede{color:var(--ink-soft); font-size:1.05rem; max-width:52ch;}
   margin-inline:auto;
   padding-inline:var(--gutter);
 }
+html , body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .section{padding-block:clamp(56px, 9vw, 112px);}
 .section-head{
   display:flex;
