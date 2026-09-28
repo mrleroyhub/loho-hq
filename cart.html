@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{if(localStorage.getItem("loho_theme")==="dark")document.documentElement.setAttribute("data-theme","dark");}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart — LOHO HQ</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="announce" data-cfg="brand.announcement"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">LOHO<span>HQ</span></a>
+    <span class="logo-strap" data-cfg="brand.tagline"></span>
+    <nav class="main-nav" id="mainNav">
+      <a href="shop.html">Shop</a>
+      <a href="shop.html?gender=men">Men</a>
+      <a href="shop.html?gender=women">Women</a>
+      <a href="shop.html#brands">Brands</a>
+      <a href="shop.html?tag=new">New Arrivals</a>
+    </nav>
+    <div class="header-actions">
+      <form class="search-form" role="search">
+        <input type="search" placeholder="Search watches…" aria-label="Search watches">
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      </form>
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <span class="cart-count" style="display:none;">0</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap"><h1>Your Cart</h1></div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div id="cartContent" class="reveal in-view">
+        <!-- filled by cart-page.js -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">LOHO<span style="color:var(--gold)">HQ</span></a>
+        <p data-cfg="brand.tagline" style="text-transform:uppercase; font-weight:700; letter-spacing:.04em; color:#fff; margin-bottom:10px;"></p>
+        <p>A Nigerian fashion hub for stylish, affordable watches from brands you know.</p>
+        <div class="social-row">
+          <a data-cfg-href="instagram" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a data-cfg-href="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2h3.2c.2 1.7 1.3 3.2 3.8 3.5v3.2c-1.5 0-2.9-.4-4-1.1v6.6a5.8 5.8 0 1 1-5.8-5.8c.3 0 .6 0 .9.1v3.3a2.6 2.6 0 1 0 1.9 2.5V2z"/></svg></a>
+          <a data-cfg-href="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.03 3C9.4 3 4 8.34 4 14.9c0 2.27.63 4.4 1.72 6.23L4 29l8.1-2.54a12.9 12.9 0 0 0 3.93.6c6.63 0 12.03-5.34 12.03-11.9C28.06 8.34 22.66 3 16.03 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="shop.html">All Watches</a>
+        <a href="shop.html?gender=men">Men</a>
+        <a href="shop.html?gender=women">Women</a>
+        <a href="shop.html?tag=new">New Arrivals</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html#about">About</a>
+        <a href="cart.html">Cart</a>
+        <a data-cfg-href="whatsapp" target="_blank" rel="noopener">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a data-cfg-href="whatsapp" target="_blank" rel="noopener">Delivery</a>
+        <a data-cfg-href="whatsapp" target="_blank" rel="noopener">Returns</a>
+        <a data-cfg-href="email">Email Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-cfg-year></span> LOHO HQ. All rights reserved.</span>
+      <span data-cfg="contact.address"></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" data-cfg-href="whatsapp" target="_blank" rel="noopener" aria-label="Chat with LOHO HQ on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.03 3C9.4 3 4 8.34 4 14.9c0 2.27.63 4.4 1.72 6.23L4 29l8.1-2.54a12.9 12.9 0 0 0 3.93.6c6.63 0 12.03-5.34 12.03-11.9C28.06 8.34 22.66 3 16.03 3zm0 21.7c-1.9 0-3.68-.55-5.18-1.5l-.37-.22-4.06 1.27 1.3-3.9-.24-.4a9.63 9.63 0 0 1-1.5-5.05c0-5.33 4.4-9.65 9.85-9.65 5.44 0 9.85 4.32 9.85 9.65 0 5.33-4.4 9.8-9.65 9.8z"/></svg>
+</a>
+
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/watch-art.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart-page.js"></script>
+</body>
+</html>
