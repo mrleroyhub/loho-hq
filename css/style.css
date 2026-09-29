@@ -208,7 +208,7 @@ html , body {
   color:var(--muted); padding-left:16px; margin-left:2px;
   border-left:1px solid var(--sand-line); white-space:nowrap;
 }
-@container site (max-width: 1080px){ .logo-strap{display:none;} }
+@media (max-width: 1080px){ .logo-strap{display:none;} }
 .main-nav a{
   font-weight:500; font-size:0.95rem; color:var(--ink-soft);
   transition:color .2s;
@@ -435,7 +435,7 @@ html , body {
   .hero-cinematic-content *, .glass-chip, .hero-scrollcue{ animation:none !important; opacity:1 !important; transform:none !important; }
   .hero-scrollcue .line{ animation:none; }
 }
-@container site (max-width:860px){
+@media (max-width:860px){
   .hero-glass-row{ display:none; }
   .hero--cinematic{ align-items:flex-end; }
 }
@@ -991,7 +991,7 @@ html , body {
 }
 
 /* ---------- 18. Responsive ---------- */
-@container site (max-width: 1024px){
+@media (max-width: 1024px){
   .product-grid{grid-template-columns:repeat(3,1fr);}
   .cat-bento{grid-template-columns:repeat(3,1fr);}
   .about-grid, .product-layout, .cart-layout{grid-template-columns:1fr;}
@@ -1001,7 +1001,7 @@ html , body {
   .footer-grid{grid-template-columns:1fr 1fr;}
 }
 
-@container site (max-width: 860px){
+@media (max-width: 860px){
   .main-nav{
     position:fixed; inset:73px 0 0 0;
     background:rgba(var(--paper-rgb),0.72);
@@ -1020,7 +1020,7 @@ html , body {
   .hero-copy{max-width:100%;}
 }
 
-@container site (max-width: 680px){
+@media (max-width: 680px){
   .product-grid{grid-template-columns:repeat(2,1fr);}
   .cat-bento{grid-template-columns:repeat(2,1fr); grid-auto-rows:130px;}
   .cat-tile.large{grid-column:span 2; grid-row:span 1;}
@@ -1035,19 +1035,9 @@ html , body {
   .cart-row .remove{grid-area:meta; justify-self:end;}
 }
 
-@container site (max-width: 480px){
+@media (max-width: 480px){
   .product-grid{grid-template-columns:1fr 1fr; gap:16px;}
   .card-body{padding:12px;}
   .section{padding-block:44px;}
   .footer-grid{grid-template-columns:1fr; gap:24px;}
-}
-
-/* ---------- 18. Forced desktop-scale wrapper ---------- */
-html{ overflow-x:hidden; }
-body{ overflow-x:hidden; }
-#scaleWrap{
-  width:1280px;
-  transform-origin: top left;
-  container-type: inline-size;
-  container-name: site;
 }
